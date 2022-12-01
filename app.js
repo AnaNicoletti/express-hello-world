@@ -28,6 +28,13 @@ app.get('/pokemons', (req, res) => {
   res.json(pokemon)
 })
 
+app.post('/series', (req, res) => {
+  console.log("Just got a request!")
+  const serie = ['Greys Anatomy', 'Station 19', 'Lost In Space']
+  res.json(serie)
+})
+
+
 app.listen(3100, () => console.log(`Example app listening on port 3100!`));
 
 
