@@ -22,6 +22,12 @@ app.get('/tico', (req, res) => {
   res.send('teco')
 })
 
+app.get('/pokemons', (req, res) => {
+  console.log("Just got a request!")
+  const pokemon = ['Pikachu', 'Caterpie', 'Pidgeotto', 'Bulbasaur', 'Charmander', 'Squirtle', 'Krabby', 'Muk', 'Tauros', 'Mr. Mime']
+  res.json(pokemon)
+})
+
 app.listen(3100, () => console.log(`Example app listening on port 3100!`));
 
 
